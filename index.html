@@ -680,27 +680,31 @@
     .VIpgJd-ZVi9od-ORHb-OEVmcd { display: none !important; }
     iframe.skiptranslate { display: none !important; }
 
-    @media (max-width: 640px) {
+    @media (max-width: 900px) {
       .lang-switcher {
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 999;
-        background: rgba(10,10,10,0.92);
+        z-index: 9999;
+        background: rgba(10,10,10,0.95);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
-        display: flex;
+        display: flex !important;
         justify-content: center;
-        gap: 1rem;
-        padding: .6rem 1rem;
-        border-top: 1px solid rgba(245,240,232,0.15);
+        gap: 1.2rem;
+        padding: .7rem 1rem;
+        border-top: 1px solid rgba(245,240,232,0.2);
+        /* Take out of nav flow */
+        width: 100%;
       }
       .lang-btn {
-        font-size: 1.6rem !important;
+        font-size: 1.8rem !important;
         padding: .2rem .4rem !important;
+        border: none !important;
+        background: transparent !important;
       }
-      body { padding-bottom: 56px; }
+      body { padding-bottom: 64px; }
     }
 
     /* ── MOBILE ── */
